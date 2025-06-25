@@ -13,7 +13,7 @@ class DataIngestionConfig:
     raw_data_path =os.path.join("artifacts","data.csv")
     
 
-class Dataingestion:
+class DataIngestion:
     def __init__(self):
         self.ingestion_config=DataIngestionConfig()
 
@@ -39,9 +39,4 @@ class Dataingestion:
         except Exception as e:
             raise CustomException(e,sys)
 
-
-
-if __name__ == "__main__":
-    obj= Dataingestion()    
-    obj.initiate_data_ingestion()
-                                                                                                                                    
+                                                                         
